@@ -1,0 +1,17 @@
+[
+    {
+        "title": "動画1",
+        "url": "https://www.youtube.com/watch?v=VIDEO_ID1",
+        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID1/0.jpg"
+    },
+    {
+        "title": "動画2",
+        "url": "https://www.youtube.com/watch?v=VIDEO_ID2",
+        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID2/0.jpg"
+    },
+    {
+        "title": "動画3",
+        "url": "https://www.youtube.com/watch?v=VIDEO_ID3",
+        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID3/0.jpg"
+    }
+]
