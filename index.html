@@ -3,13 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>動画埋め込みページ</title>
+    <title>動画リスト</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { list-style-type: none; }
+        li { margin: 20px 0; }
+    </style>
 </head>
 <body>
-    <h1>自分の動画</h1>
-    <video width="640" height="360" controls>
-        <source src="video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <h1>動画リスト</h1>
+    <ul id="video-list">
+        <!-- 動画リストがここに表示される -->
+    </ul>
+
+    <script>
+        // JSONファイルを読み込む
+        fetch('videos.json')
+            .then(response => response.json())  // JSONデータをパース
+            .then(data => {
+                const videoList = document.getElementById('video-list');
+                
+                data.forEach(video => {
+                    // 動画のリストアイテムを作成
+                    const li = document.createElement('li');
+                    
+                    // サムネイル画像を作成
+                    const img = document.createElement('img');
+                    img.src = video.thumbnail;
+                    img.alt = video.title;
+                    img.width = 120;
+
+                    // 動画タイトルを作成
+                    const title = document.createElement('h2');
+                    title.textContent = video.title;
+
+                    // 動画リンクを作成
+                    const link = document.createElement('a');
+                    link.href = video.url;
+                    link.target = "_blank";  // 新しいタブで開く
+                    link.textContent = '動画を見る';
+
+                    // リストアイテムに追加
+                    li.appendChild(img);
+                    li.appendChild(title);
+                    li.appendChild(link);
+                    videoList.appendChild(li);
+                });
+            })
+            .catch(error => console.error('JSONの読み込みエラー:', error));
+    </script>
 </body>
 </html>
