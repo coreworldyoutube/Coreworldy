@@ -1,17 +1,12 @@
 [
     {
-        "title": "動画1",
-        "url": "https://www.youtube.com/watch?v=VIDEO_ID1",
-        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID1/0.jpg"
+        "title": "胸鳥のゲーム部屋 1",
+        "url": "https://www.youtube.com/watch?v=3h1Cqk8ZcA8",
+        "thumbnail": "https://img.youtube.com/vi/3h1Cqk8ZcA8/0.jpg"
     },
     {
-        "title": "動画2",
-        "url": "https://www.youtube.com/watch?v=VIDEO_ID2",
-        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID2/0.jpg"
-    },
-    {
-        "title": "動画3",
-        "url": "https://www.youtube.com/watch?v=VIDEO_ID3",
-        "thumbnail": "https://img.youtube.com/vi/VIDEO_ID3/0.jpg"
+        "title": "胸鳥のゲーム部屋 2",
+        "url": "https://www.youtube.com/watch?v=WvmPaoKD1t8",
+        "thumbnail": "https://img.youtube.com/vi/WvmPaoKD1t8/0.jpg"
     }
 ]
