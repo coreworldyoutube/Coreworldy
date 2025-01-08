@@ -1,12 +1,12 @@
 [
     {
         "title": "胸鳥のゲーム部屋 1",
-        "url": "https://www.youtube.com/watch?v=3h1Cqk8ZcA8",
+        "embed_url": "https://www.youtube.com/embed/3h1Cqk8ZcA8",
         "thumbnail": "https://img.youtube.com/vi/3h1Cqk8ZcA8/0.jpg"
     },
     {
         "title": "胸鳥のゲーム部屋 2",
-        "url": "https://www.youtube.com/watch?v=WvmPaoKD1t8",
+        "embed_url": "https://www.youtube.com/embed/WvmPaoKD1t8",
         "thumbnail": "https://img.youtube.com/vi/WvmPaoKD1t8/0.jpg"
     }
 ]
