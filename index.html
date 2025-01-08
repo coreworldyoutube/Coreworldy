@@ -37,16 +37,18 @@
                     const title = document.createElement('h2');
                     title.textContent = video.title;
 
-                    // 動画リンクを作成
-                    const link = document.createElement('a');
-                    link.href = video.url;
-                    link.target = "_blank";  // 新しいタブで開く
-                    link.textContent = '動画を見る';
+                    // 埋め込み動画を作成
+                    const iframe = document.createElement('iframe');
+                    iframe.src = video.embed_url;
+                    iframe.width = 560;
+                    iframe.height = 315;
+                    iframe.frameborder = "0";
+                    iframe.allowfullscreen = true;
 
                     // リストアイテムに追加
                     li.appendChild(img);
                     li.appendChild(title);
-                    li.appendChild(link);
+                    li.appendChild(iframe);
                     videoList.appendChild(li);
                 });
             })
